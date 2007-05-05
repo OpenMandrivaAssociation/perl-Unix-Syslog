@@ -1,7 +1,7 @@
 %define	module	Unix-Syslog
 %define	name	perl-%{module}
 %define	version	0.100
-%define	release	3mdk
+%define	release	%mkrel 4
 
 Name:		%{name}
 Summary:	Perl interface to the UNIX system logger
@@ -24,6 +24,8 @@ UNIX systems via perl XSUBs (perl's C interface).
 %build
 CFLAGS="$RPM_OPT_FLAGS" %{__perl} Makefile.PL INSTALLDIRS=vendor
 %make
+
+%check
 make test
 
 %install
