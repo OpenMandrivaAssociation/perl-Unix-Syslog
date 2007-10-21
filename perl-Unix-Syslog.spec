@@ -1,7 +1,7 @@
 %define	module	Unix-Syslog
 %define	name	perl-%{module}
-%define	version	0.100
-%define	release	%mkrel 4
+%define	version	1.0
+%define	release	%mkrel 1
 
 Name:		%{name}
 Summary:	Perl interface to the UNIX system logger
@@ -10,7 +10,7 @@ Release:	%{release}
 License:	GPL
 Group:		Development/Perl
 URL:		http://www.cpan.org/
-Source0:	%{module}-%{version}.tar.bz2
+Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/%{module}/%{module}-%{version}.tar.gz
 Buildrequires:	perl-devel
 Buildroot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
