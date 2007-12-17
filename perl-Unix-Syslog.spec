@@ -12,7 +12,6 @@ Group:		Development/Perl
 URL:		http://www.cpan.org/
 Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/%{module}/%{module}-%{version}.tar.bz2
 Buildrequires:	perl-devel
-Buildroot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
 This module provides access to the system logger available on most
