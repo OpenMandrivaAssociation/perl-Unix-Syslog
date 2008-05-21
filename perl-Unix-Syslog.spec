@@ -1,7 +1,7 @@
 %define	module	Unix-Syslog
 %define	name	perl-%{module}
-%define	version	1.0
-%define	release	%mkrel 2
+%define	version	1.1
+%define	release	%mkrel 1
 
 Name:		%{name}
 Summary:	Perl interface to the UNIX system logger
@@ -9,10 +9,10 @@ Version:	%{version}
 Release:	%{release}
 License:	GPL
 Group:		Development/Perl
-URL:		http://www.cpan.org/
-Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/%{module}/%{module}-%{version}.tar.bz2
+Url:		http://search.cpan.org/dist/%{module}/
+Source:     http://www.cpan.org/modules/by-module/Unix/%{module}-%{version}.tar.gz
 Buildrequires:	perl-devel
-Buildroot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
+Buildroot:	%{_tmppath}/%{name}-%{version}
 
 %description
 This module provides access to the system logger available on most
@@ -29,11 +29,11 @@ CFLAGS="$RPM_OPT_FLAGS" %{__perl} Makefile.PL INSTALLDIRS=vendor
 make test
 
 %install
-rm -rf $RPM_BUILD_ROOT
+rm -rf %{buildroot}
 %{makeinstall_std}
 
 %clean
-rm -rf $RPM_BUILD_ROOT 
+rm -rf %{buildroot} 
 
 %files
 %defattr(-,root,root)
