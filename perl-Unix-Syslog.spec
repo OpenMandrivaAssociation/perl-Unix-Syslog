@@ -3,7 +3,7 @@
 Summary:	Perl interface to the UNIX system logger
 Name:		perl-%{module}
 Version:	1.1
-Release:	9
+Release:	10
 License:	GPLv2
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{module}/
