@@ -1,13 +1,14 @@
 %define	module	Unix-Syslog
+%define upstream_version 1.1
 
 Summary:	Perl interface to the UNIX system logger
 Name:		perl-%{module}
-Version:	1.1
-Release:	13
+Version:	%perl_convert_version %{upstream_version}
+Release:	14
 License:	GPLv2
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{module}/
-Source0:	http://www.cpan.org/modules/by-module/Unix/%{module}-%{version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/Unix/%{module}-%{upstream_version}.tar.gz
 Buildrequires:	perl-devel
 
 %description
@@ -15,10 +16,10 @@ This module provides access to the system logger available on most
 UNIX systems via perl XSUBs (perl's C interface).
 
 %prep
-%setup -qn %{module}-%{version}
+%setup -qn %{module}-%{upstream_version}
 
 %build
-CFLAGS="$RPM_OPT_FLAGS" %__perl Makefile.PL INSTALLDIRS=vendor
+CFLAGS="%{optflags}" %__perl Makefile.PL INSTALLDIRS=vendor
 %make
 
 %check
