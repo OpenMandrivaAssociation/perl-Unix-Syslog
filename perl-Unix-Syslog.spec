@@ -1,7 +1,7 @@
 %define	module	Unix-Syslog
 %define	name	perl-%{module}
 %define	version	1.1
-%define	release	%mkrel 9
+%define release	10
 
 Name:		%{name}
 Summary:	Perl interface to the UNIX system logger
