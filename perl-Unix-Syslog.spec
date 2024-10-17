@@ -7,7 +7,7 @@ Version:	%perl_convert_version %{upstream_version}
 Release:	22
 License:	GPLv2
 Group:		Development/Perl
-Url:		http://search.cpan.org/dist/%{module}/
+Url:		https://search.cpan.org/dist/%{module}/
 Source0:	http://www.cpan.org/modules/by-module/Unix/%{module}-%{upstream_version}.tar.gz
 Buildrequires:	perl-devel
 
