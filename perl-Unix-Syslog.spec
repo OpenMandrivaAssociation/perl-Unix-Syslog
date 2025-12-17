@@ -3,7 +3,7 @@
 Summary:	Perl interface to the UNIX system logger
 Name:		perl-%{module}
 Version:	1.1
-Release:	1
+Release:	2
 License:	GPLv2
 Group:		Development/Perl
 Url:		https://metacpan.org/pod/Unix::Syslog
