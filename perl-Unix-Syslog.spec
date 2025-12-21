@@ -8,6 +8,7 @@ License:	GPLv2
 Group:		Development/Perl
 Url:		https://metacpan.org/pod/Unix::Syslog
 Source0:	http://www.cpan.org/modules/by-module/Unix/%{module}-%{version}.tar.gz
+BuildRequires:	make
 Buildrequires:	perl-devel
 
 %description
